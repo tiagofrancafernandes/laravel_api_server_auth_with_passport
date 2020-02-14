@@ -1,0 +1,8 @@
+13/fev/2020
+Encryption keys generated successfully.
+Personal access client created successfully.
+Client ID: 1
+Client secret: 25w8NLneriDdTcBktppDwg1yX2CEPCNt0LScqg3F
+Password grant client created successfully.
+Client ID: 2
+Client secret: A3ti7fipkGWaaRlaHCUmQm9DpzzH7UBXHS2yh8g

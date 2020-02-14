@@ -1,0 +1,21 @@
+tfcomwebserver:
+   # build: docker_tfcomwebserver
+   image: tiagofranca/tfcomwebserver:20-01-28
+   # environment:
+   #    - POSTGRES_DB=${DB_DATABASE}
+   #    - POSTGRES_USER=${DB_USERNAME}
+   #    - POSTGRES_PASSWORD=${DB_PASSWORD}
+   tty: true
+   ports:
+      - ${HTTP_PORT}:80
+      - 8090:8080
+   # command: php7.3-fpm start            ##Já incia no .bash_alias
+   # command: service nginx start         ##Já incia no .bash_alias
+   volumes:
+      - /:/host_root
+      - ./docker_tfcomwebserver/conf/php/php.ini:/usr/local/etc/php/conf.d/php.ini
+      - ./docker_tfcomwebserver/conf/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+      - ./docker_tfcomwebserver/conf/nginx/default.conf:/etc/nginx/sites-available/default
+      - ./:/var/www/html
+      - ./:/source_path
+      - ./docker_tfcomwebserver/scripts/:/scripts
