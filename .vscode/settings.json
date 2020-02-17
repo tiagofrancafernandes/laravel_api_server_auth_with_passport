@@ -1,0 +1,9 @@
+{
+    "intelephense.environment.includePaths": [
+        "vendor"
+    ],
+    "intelephense.diagnostics.undefinedTypes": false,
+    "intelephense.diagnostics.enable": false,
+    "intelephense.diagnostics.undefinedSymbols": false
+
+}
