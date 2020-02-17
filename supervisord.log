@@ -1,0 +1,57 @@
+2020-02-16 17:59:49,795 CRIT Supervisor running as root (no user in config file)
+2020-02-16 17:59:49,796 INFO Included extra file "/opt/docker/etc/supervisor.d/blackfire-agent.conf" during parsing
+2020-02-16 17:59:49,796 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2020-02-16 17:59:49,796 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2020-02-16 17:59:49,796 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2020-02-16 17:59:49,797 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2020-02-16 17:59:49,797 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2020-02-16 17:59:49,797 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2020-02-16 17:59:49,797 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2020-02-16 17:59:49,827 INFO RPC interface 'supervisor' initialized
+2020-02-16 17:59:49,828 INFO supervisord started with pid 511
+2020-02-16 17:59:50,831 INFO spawned: 'syslogd' with pid 514
+2020-02-16 17:59:50,836 INFO spawned: 'nginxd' with pid 515
+2020-02-16 17:59:50,842 INFO spawned: 'php-fpmd' with pid 516
+2020-02-16 17:59:50,857 INFO spawned: 'crond' with pid 517
+2020-02-16 17:59:50,871 INFO spawned: 'postfixd' with pid 519
+2020-02-16 17:59:50,895 INFO spawned: 'sshd' with pid 525
+2020-02-16 17:59:50,904 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-16 17:59:50,907 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-16 17:59:50,909 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-16 17:59:50,911 INFO success: postfixd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-16 17:59:50,913 INFO success: sshd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-02-16 17:59:52,412 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-16 18:00:02,555 WARN received SIGINT indicating exit request
+2020-02-16 18:00:02,556 INFO waiting for nginxd, postfixd, php-fpmd, crond, syslogd, sshd to die
+2020-02-16 18:00:02,558 INFO stopped: sshd (exit status 0)
+2020-02-16 18:00:04,715 WARN received SIGINT indicating exit request
+2020-02-16 18:00:04,890 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,019 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,187 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,354 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,515 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,667 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,667 INFO waiting for nginxd, postfixd, php-fpmd, crond, syslogd to die
+2020-02-16 18:00:05,819 WARN received SIGINT indicating exit request
+2020-02-16 18:00:05,979 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,147 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,315 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,507 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,756 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,806 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,857 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,907 WARN received SIGINT indicating exit request
+2020-02-16 18:00:06,957 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,007 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,057 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,108 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,159 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,210 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,259 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,311 WARN received SIGINT indicating exit request
+2020-02-16 18:00:07,383 INFO stopped: postfixd (exit status 0)
+2020-02-16 18:00:07,387 INFO stopped: crond (terminated by SIGTERM)
+2020-02-16 18:00:08,418 INFO stopped: php-fpmd (exit status 0)
+2020-02-16 18:00:08,435 INFO stopped: nginxd (exit status 0)
+2020-02-16 18:00:09,438 INFO waiting for syslogd to die
+2020-02-16 18:00:09,541 INFO stopped: syslogd (exit status 0)

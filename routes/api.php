@@ -21,6 +21,8 @@ Route::prefix('auth')->group( function() {
 
     Route::post('register',     'AuthenticatorController@register');
     Route::post('login',        'AuthenticatorController@login');
+    Route::get('register/activate/{id}/{token}',
+            'AuthenticatorController@register_activate');
 
     Route::middleware('auth:api')->group( function () {
         Route::post('logout',        'AuthenticatorController@logout');
