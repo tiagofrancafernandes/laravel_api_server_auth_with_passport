@@ -14,6 +14,7 @@ touch /app/database/database.sqlite
 
 #SQLITE Comand line simple
 sqlite3 --list /ongoing/laravel_api_server_auth_with_passport/database/database.sqlite "select count(*) from users;"
+sqlite3 --list $(pwd)/database/database.sqlite "select count(*) from users;"
 
 #Gmail Apps
 https://support.google.com/accounts/answer/185833?hl=pt
