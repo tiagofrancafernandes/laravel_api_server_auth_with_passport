@@ -18,3 +18,4 @@ sqlite3 --list $(pwd)/database/database.sqlite "select count(*) from users;"
 
 #Gmail Apps
 https://support.google.com/accounts/answer/185833?hl=pt
+https://myaccount.google.com/apppasswords

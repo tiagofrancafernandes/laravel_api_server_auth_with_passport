@@ -32,3 +32,13 @@ Route::prefix('auth')->group( function() {
 
 Route::get('products',        'ProductsController@index')
     ->middleware('auth:api');
+
+Route::get('users',        function(){
+    $users = [
+        ['id' => 1, 'firstName' => "one", 'lastName' => "last one", 'token' => "one-fake-jwt-token", 'username' => "oneuser"],
+        ['id' => 2, 'firstName' => "two", 'lastName' => "last two", 'token' => "two-fake-jwt-token", 'username' => "twouser"],
+        ['id' => 3, 'firstName' => "three", 'lastName' => "last three", 'token' => "three-fake-jwt-token", 'username' => "threeuser"],
+    ];
+
+    return response()->json($users, 200);
+});

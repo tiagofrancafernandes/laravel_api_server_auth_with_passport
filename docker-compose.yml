@@ -31,6 +31,7 @@ services:
     volumes:
       - /:/host_root
       - ./:/app/
+      - ./_dev_dir/bash_alises.sh:/root/.bash_aliases
       - ./webdevops_docker/vhost.conf:/opt/docker/etc/nginx/vhost.conf
       - ./webdevops_docker/:/docker/
     # cap and privileged needed for slowlog
@@ -48,7 +49,7 @@ services:
   omnidb:
     image: taivokasper/omnidb
     volumes:
-      - config-omnidb:/etc/omnidb 
+      - config-omnidb:/etc/omnidb
     links:
       # - postgresgis:postgres
       - mysql:mysql

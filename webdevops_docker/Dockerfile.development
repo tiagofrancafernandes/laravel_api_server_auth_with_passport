@@ -62,6 +62,8 @@ RUN ln -sf /opt/docker/etc/cron/crontab /etc/cron.d/docker-boilerplate \
     && echo '' >> /opt/docker/etc/cron/crontab \
     && ln -sf /opt/docker/etc/php/development.ini /opt/docker/etc/php/php.ini \
 && php -v \
+&& apt update \
+&& apt-get install -y nano wget git sqlite3
 
 # Configure volume/workdir
 WORKDIR /app/
