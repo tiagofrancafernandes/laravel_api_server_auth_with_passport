@@ -18,7 +18,9 @@ Se for preciso atualizar os mesmos, atualize dentro da pasta **`_dev_dir/docker_
 ____
 
 ## Chaves adicionais do **.env**
-Salvar chaves adicionais ao *.env* no arquivo **`extend.env`**.
+Salvar chaves adicionais *(personalizadas)* do *.env* no arquivo **`extend.env`** e ao criar um novo *.env* copiar com um **`cat extend.env >> .env`** que as chaves estarão no .env e as atualize conforme a necessidade.
+
+Isso serve para que se por ventura criar uma nova variável de embiente não se esqueça de as adionar ao projeto após um clone.
 ____
 
 <!--
