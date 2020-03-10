@@ -12,3 +12,7 @@ npm-debug.log
 yarn-error.log
 /.vscode/
 *_bkp
+
+## Desenvolvimento
+/docker-compose.yml
+/webdevops_docker/
