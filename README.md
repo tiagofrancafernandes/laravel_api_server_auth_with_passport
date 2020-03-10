@@ -23,11 +23,24 @@ Salvar chaves adicionais *(personalizadas)* do *.env* no arquivo **`extend.env`*
 Isso serve para que se por ventura criar uma nova variável de embiente não se esqueça de as adionar ao projeto após um clone.
 ____
 
-<!--
-//TODO Atualizar posteriormente
+
 ## Pós clone:
+<!-- //TODO Atualizar posteriormente -->
 
-1 - `composer install`
+1 - Instalar as dependências:
 
-2 - `artisan key:generate`
--->
+ `composer install`
+
+2 - Para corrigir alerta **`Key path "file:///app/storage/oauth-public.key" does not exist or is not readable`** *(não é erro, só está informando a ausência dos keys)* **[ ! EM DESENVOLVIMENTO ! ]** execute:
+
+ `php artisan passport:keys`
+
+ > **[!!!]** As chaves geradas em produção devem ser guardadas em segurança, elas servem para criptografar os tokens de autenticação.
+
+3 - Para gerar um APP_KEY execute **[ ! EM DESENVOLVIMENTO ! ]** :
+
+ `artisan key:generate`
+
+> **[!!!]** Isso criará um *base64* APP_KEY no *.env*. O APP_KEY de produção devem ser guardadas em segurança, elas servem para criptografar as senhas e outras coisas que precisem de criptografia.
+
+
