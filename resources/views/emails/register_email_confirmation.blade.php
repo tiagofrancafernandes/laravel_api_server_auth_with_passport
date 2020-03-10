@@ -9,9 +9,10 @@
 <body>
     <div>
         <h4>Welcome, {{ $name }}</h4>
-        <p>You has been register in our system using the e-mail: {{ $email }}.</p>
-        <p>At time: {{ $datetime }}</p>
+        <p>You have just registered in our system (<a href="{{env('APP_URL')}}">{{env('APP_NAME')}}</a>) using the e-mail: {{ $email }}. </p>
+        <p>To confirm your account, visit the link below.</p>
         <p>Acces this link to activate the account: <a href="{{ $activation_link }}" target="_blank">Activate</a>. </p>
+        <p>E-mail sent at: {{ $datetime }}</p>
     </div>
 
 </body>
