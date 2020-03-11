@@ -50,7 +50,12 @@
 #++++++++++++++++++++++++++++++++++++++
 
 #FROM webdevops/php-apache-dev:ubuntu-16.04
-FROM webdevops/php-nginx-dev:ubuntu-18.04
+
+##PHP 7.2.24
+# FROM webdevops/php-nginx-dev:ubuntu-18.04
+
+##PHP 7.3.14
+FROM webdevops/php-nginx-dev:debian-10
 
 ENV PROVISION_CONTEXT "development"
 
