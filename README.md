@@ -43,4 +43,9 @@ ____
 
 > **[!!!]** Isso criará um *base64* APP_KEY no *.env*. O APP_KEY de produção devem ser guardadas em segurança, elas servem para criptografar as senhas e outras coisas que precisem de criptografia.
 
+3 - Se **`Personal access client not found. Please create one`**  **[ ! EM DESENVOLVIMENTO ! ]** :
+ `php artisan passport:install`
+ 
+ > **[!!!]** Por segurança, ao gerar em produção, guardar os tokens (Client secrets) gerados.
+
 
