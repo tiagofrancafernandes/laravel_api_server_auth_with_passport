@@ -16,3 +16,6 @@ yarn-error.log
 ## Desenvolvimento
 /docker-compose.yml
 /webdevops_docker/
+#OnlyDEV files prefix, for tests
+odev_*
+
