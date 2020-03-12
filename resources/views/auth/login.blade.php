@@ -8,6 +8,9 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
+
+                    @include('modules/sessions_messages')
+
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

@@ -117,6 +117,10 @@ return [
     'uploaded' => 'The :attribute failed to upload.',
     'url' => 'The :attribute format is invalid.',
     'uuid' => 'The :attribute must be a valid UUID.',
+    'account' => [
+        'validated-and-enabled' => 'Account has been disabled. Contact our team.',
+        'validated' => 'You need to validate your account. Check the email sent when creating the account.',
+    ],
 
     /*
     |--------------------------------------------------------------------------

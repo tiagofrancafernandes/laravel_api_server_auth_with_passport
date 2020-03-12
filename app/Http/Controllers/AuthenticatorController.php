@@ -51,12 +51,23 @@ class AuthenticatorController extends Controller
 
         if($user && $user->token ==  $token)
         {
-            $user->active    =  true;
-            $user->token     =  '';
+            $user->active             =  true;
+            $user->token              =  '';
+            $user->email_verified_at  =  date('Y-m-d H:i:s');
             $user->save();
+
+            $messages = [
+                ['content' => 'Your account is activated!', 'status' => 'success']
+            ];
+            session()->put('messages', $messages);
 
             return view('account_sign_up/account_activated');
         }
+
+        $messages = [
+            ['content' => 'Fail to validate! Please check your e-mail link. Maybe your account was activated.', 'status' => 'error']
+        ];
+        session()->put('messages', $messages);
 
         return view('account_sign_up/error_to_validate');
     }

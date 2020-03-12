@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes();//./vendor/laravel/ui/src/AuthRouteMethods.php (+- 19)
+Route::get('/logout', 'Auth\LoginController@logout')->name('web.auth.get.logout');
 
 Route::get('/home', 'HomeController@index')->name('home');

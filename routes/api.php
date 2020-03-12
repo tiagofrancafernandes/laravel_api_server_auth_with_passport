@@ -33,7 +33,7 @@ Route::prefix('auth')->group( function() {
 Route::get('products',        'ProductsController@index')
     ->middleware('auth:api');
 
-Route::get('users',        function(){
+Route::get('users',        function(){//TODO Remove this [only dev]
     $users = [
         ['id' => 1, 'firstName' => "one", 'lastName' => "last one", 'token' => "one-fake-jwt-token", 'username' => "oneuser"],
         ['id' => 2, 'firstName' => "two", 'lastName' => "last two", 'token' => "two-fake-jwt-token", 'username' => "twouser"],
