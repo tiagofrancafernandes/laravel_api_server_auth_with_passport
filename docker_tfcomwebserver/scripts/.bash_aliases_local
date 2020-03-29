@@ -1,0 +1,40 @@
+##Tiago Aliases
+export monitor1="eDP-1"
+export monitor2="HDMI-1"
+alias brilho="xrandr --output $monitor1 --brightness 1.0 && xrandr --output $monitor2 --brightness 1.0"
+alias brilho-monitor1="xrandr --output $monitor1 --brightness"
+alias brilho-monitor2="xrandr --output $monitor2 --brightness"
+
+##VSCode
+alias code-back-front='code /ongoing/workspaces/back_e_front.code-workspace'
+alias code-back='code /ongoing/workspaces/back.code-workspace'
+alias code-front='code /ongoing/workspaces/front.code-workspace'
+
+## ongoing
+alias ongoing='cd /ongoing/'
+alias backend='cd /ongoing/parceiro-backend/'
+alias frontend='cd /ongoing/parceiro-frontend/'
+
+##SSH Expect
+alias 129server=' connect_ssh_expect 192.168.100.129 tiago 123 22 show'
+alias 15server=' connect_ssh_expect 192.168.15.9 tiago 123 22 show'
+
+##Artisan aliases
+alias artisan='php ./artisan'
+alias artisanserve='php ./artisan serve --host 0.0.0.0 --port=8001'
+
+##Git Aliases
+alias gsm='git status |grep -v package |grep -v enviro |grep modified'
+alias gs-d='git status |grep -v package |grep -v enviro |grep -v delete |grep -v ngserveall'
+alias modified='git status |grep -v package |grep -v enviro |grep modified'
+alias gitmodified='git status |grep -v package |grep -v enviro |grep modified'
+alias gitstatus2='git status |grep -v dist |grep -v package |grep -v enviro'
+alias branchgrep='git branch |grep'
+alias gitdeploy_day="git checkout -b deploy_$(date +%Y_%m_%d)"
+alias deploy_day="git checkout -b deploy_$(date +%Y_%m_%d)"
+    #Usando Alias pra trocar o editor de commit message
+alias git_editor_vscode="git config --global core.editor \"$(which code) -w\" "
+alias git_editor_nano="git config --global core.editor \"$(which nano)\" " 
+
+
+alias ssh-dev-back="ssh -i /ongoing/docs_sistemas/dev_enviroment/pro.pem ubuntu@dev.pontomaisweb.com.br"
