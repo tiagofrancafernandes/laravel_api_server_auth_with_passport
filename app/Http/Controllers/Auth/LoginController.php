@@ -53,29 +53,29 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            // 'email'         =>  'required|string|email|exists:users,email,active,1',
-            'email'         => ['required', 'string', 'email', new ValidatedAndNotDisabled, new Validated],
-            'password'      =>  'required|string',
+            'email'          => ['required', 'string', 'email', 'exists:users,email',
+                               new ValidatedAndNotDisabled, new Validated
+                            ],
+            'password'       => 'required|string',
         ]);
 
-        $credentials = [
-            'email'         => $request->email,
-            'password'      => $request->password,
-            'active'        => 1
+        $credentials     = [
+            'email'          => $request->email,
+            'password'       => $request->password,
+            'active'         => 1,
         ];
 
-        $logged_in   =   Auth::attempt($credentials);
+        $logged_in       =   Auth::attempt($credentials);
 
-        if( $logged_in )
+        if($logged_in)
         {
-            $messages = [
-                ['content' => 'Login successfully.', 'status' => 'success']
+            $messages    = [
+                ['content'   => 'Login successfully.', 'status' => 'success']
             ];
-
             return redirect('home')->with('messages', $messages);
         }else{
-            $messages = [
-                ['content' => 'Login failed.', 'status' => 'error']
+            $messages    = [
+                ['content'   => 'Login failed.', 'status' => 'error']
             ];
             return redirect('login')->with('messages', $messages);
         }
