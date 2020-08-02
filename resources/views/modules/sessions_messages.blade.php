@@ -1,4 +1,15 @@
-@if (session('messages'))                    
+{{--
+//How to use to set
+->with(
+            [
+                'messages' => [
+                    ['content' => 'A success!', 'status' => 'success'],
+                    ['content' => 'An error!', 'status' => 'error'],
+                ],
+            ]
+        )
+ --}}
+@if (session('messages'))                  
 @foreach (session('messages') as $m)
     @php
 
@@ -18,7 +29,7 @@
     @endphp
 
     <div class="alert alert-{{ $color }}">
-        {{ $m['content'] }}
+        {{ __($m['content']) }}
     </div>                        
 @endforeach
 @endif

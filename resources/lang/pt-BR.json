@@ -7,11 +7,17 @@
     "Forgot Your Password?": "Esqueceu sua senha?",
     "Login": "Entrar",
     "Register": "Registre-se",
+    "Account created": "Conta criada",
+    "Your account was created!": "Sua conta foi criada!",
     "My account": "Minha conta",
     "Create account": "Criar conta",
+    "Your e-mail address is": "Seu endereço de e-mail é",
+    "Please confirm the e-mail.": "Por favor confirme seu e-mail.",
+    "An activation link was sent to your e-mail.": "Um link de ativação foi enviado para seu e-mail.",
     "Home": "Principal",
     "Search": "Pesquisar",
     "Logout": "Sair",
+    "Go to login page.": "Ir para a página de login.",
     "Toggle navigation": "Alternar navegação",
     "Do you have an account? Login": "Já tem uma conta? Entrar",
     "Verify Your Email Address": "Verifique seu endereço de email",
@@ -35,5 +41,6 @@
     "Page Not Found": "Página Não Encontrada",
     "Sorry, the page you are looking for could not be found.": "Desculpe, a página que você está procurando não foi encontrada.",
     "Home Page": "Página Inicial",
-    "Languages": "Idiomas"
+    "Languages": "Idiomas",
+    "Profile": "Perfil"
 }
