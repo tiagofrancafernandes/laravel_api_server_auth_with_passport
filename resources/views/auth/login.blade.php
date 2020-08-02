@@ -66,6 +66,11 @@
                                     </a>
                                 @endif
                             </div>
+                            <div class="col-md-8 offset-md-4">
+                                    <strong>{{ __('Languages') }}</strong>
+                                    <a class="btn btn-link" href="{{ route('setlocale', 'pt-BR') }}">pt-BR</a>
+                                    <a class="btn btn-link" href="{{ route('setlocale', 'en') }}">en</a>
+                            </div>
                         </div>
                     </form>
                 </div>
